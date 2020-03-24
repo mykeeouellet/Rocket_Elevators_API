@@ -91,3 +91,5 @@ gem "bootstrap-sass"
 gem "chartkick"
 gem "groupdate"
 gem "jquery-ui-rails"
+gem 'gmaps4rails'
+gem 'underscore-rails', '~> 1.8', '>= 1.8.3'

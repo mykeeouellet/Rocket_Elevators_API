@@ -163,6 +163,7 @@ GEM
     gli (2.19.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    gmaps4rails (2.1.2)
     groupdate (5.0.0)
       activesupport (>= 5)
     haml (5.1.2)
@@ -384,10 +385,14 @@ GEM
       tzinfo (>= 1.0.0)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
+
+    underscore-rails (1.8.3)
+
     unf (0.1.4)
       unf_ext
     unf (0.1.4-java)
     unf_ext (0.0.7.6)
+
     warden (1.2.8)
       rack (>= 2.0.6)
     web-console (3.7.0)
@@ -429,6 +434,7 @@ DEPENDENCIES
   faker!
   figaro
   font-awesome-rails!
+  gmaps4rails
   groupdate
   ibm_watson
   jbuilder (~> 2.5)
@@ -451,6 +457,7 @@ DEPENDENCIES
   twilio-ruby (~> 5.32.0)
   tzinfo-data
   uglifier (>= 1.3.0)
+  underscore-rails (~> 1.8, >= 1.8.3)
   web-console (>= 3.3.0)
 
 RUBY VERSION
