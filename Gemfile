@@ -31,8 +31,6 @@ gem 'devise'
 
 gem 'rails_admin'
 
-gem "figaro"
-
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
@@ -76,7 +74,6 @@ gem 'rvm1-capistrano3', require: false
 gem 'capistrano3-puma'
 
 gem 'jquery-rails'
-# gem "font-awesome-rails"
 gem 'pg', '~> 0.18.4'
 gem "font-awesome-rails", github: "bokmann/font-awesome-rails", branch: "master"
 gem 'blazer'
@@ -86,3 +83,12 @@ gem "bootstrap-sass"
 gem "chartkick"
 gem "groupdate"
 gem "jquery-ui-rails"
+
+
+# week 7 gems
+
+# Figaro parses a Git-ignored YAML file in your application and loads its values into ENV.
+gem "figaro"
+
+# Ruby gem to quickly get started with the various IBM Watson services.
+gem "ibm_watson"
