@@ -149,6 +149,7 @@ GEM
       thor (~> 0.14)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    gmaps4rails (2.1.2)
     groupdate (5.0.0)
       activesupport (>= 5)
     haml (5.1.2)
@@ -335,6 +336,7 @@ GEM
       tzinfo (>= 1.0.0)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
+    underscore-rails (1.8.3)
     warden (1.2.8)
       rack (>= 2.0.6)
     web-console (3.7.0)
@@ -376,6 +378,7 @@ DEPENDENCIES
   faker!
   figaro
   font-awesome-rails!
+  gmaps4rails
   groupdate
   jbuilder (~> 2.5)
   jquery-rails
@@ -395,6 +398,7 @@ DEPENDENCIES
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
+  underscore-rails (~> 1.8, >= 1.8.3)
   web-console (>= 3.3.0)
 
 RUBY VERSION
