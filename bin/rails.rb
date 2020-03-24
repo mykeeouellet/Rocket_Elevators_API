@@ -17,7 +17,7 @@ include IBMWatson
 
 # For service instances that use IAM authentication
 authenticator = Authenticators::IamAuthenticator.new(
-  apikey: "{7eE5N3sDMBq7ctO_YeCdl4fnZReJgEVCPcwxbw8ZD3pn}"
+  apikey: "7eE5N3sDMBq7ctO_YeCdl4fnZReJgEVCPcwxbw8ZD3pn"
 )
 # # For service instances that use username and password authentication, use the BasicAuthenticator initialization method 
 # authenticator = Authenticators::BasicAuthenticator.new(
@@ -27,7 +27,7 @@ authenticator = Authenticators::IamAuthenticator.new(
 text_to_speech = TextToSpeechV1.new(
   authenticator: authenticator
 )
-text_to_speech.service_url = "{https://api.us-east.text-to-speech.watson.cloud.ibm.com/instances/f0cdc9cb-a371-432d-87e1-0a71316defd0}"
+text_to_speech.service_url = "https://api.us-east.text-to-speech.watson.cloud.ibm.com/instances/f0cdc9cb-a371-432d-87e1-0a71316defd0"
 
 
 puts JSON.pretty_generate(text_to_speech.list_voices.result)
@@ -55,3 +55,6 @@ end
 # --data "{\"text\":\"hello world\"}" \
 # --output hello_world.wav \
 # "https://api.us-east.text-to-speech.watson.cloud.ibm.com/instances/f0cdc9cb-a371-432d-87e1-0a71316defd0/v1/synthesize"
+
+# request.body = JSON.dump({
+#   "text" => "Greetings," + firstName + "they are currently," + numberElevator + ................................

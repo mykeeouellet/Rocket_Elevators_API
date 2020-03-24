@@ -25,7 +25,7 @@ RailsAdmin.config do |config|
   ## To disable Gravatar integration in Navigation Bar set to false
   # config.show_gravatar = true
 
-  require Rails.root.join('lib', 'rails_admin', 'custom_actions.rb')
+  # require Rails.root.join('lib', 'rails_admin', 'custom_actions.rb')
 
     config.actions do
 
@@ -38,7 +38,6 @@ RailsAdmin.config do |config|
       edit
       delete
       show_in_app
-      root
       ## With an audit adapter, you can add:
       # history_index
       # history_show
