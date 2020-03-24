@@ -210,7 +210,7 @@ end
 #seeding the batterries table
 buildType = ["Residential", "Commercial", "Corporate", "Hybrid"]
 batteryStatus = ["On", "Off"]
-batteryNnotes = ["Defective", "Good for use"]
+batteryNotes = ["Defective", "Good for use"]
 batteryInformation = ["Made in china", "New battery", "Made in Canada", "Old battery"]
 building = Building.take(20)
 employee = Employee.take(20)
@@ -228,7 +228,7 @@ employee = Employee.take(20)
         battery_last_inspection_date: Faker::Date.between_except(from: 3.year.ago, to: 1.year.from_now, excepted: Date.today),
         battery_operation_certificate: Faker::SouthAfrica.vat_number,
         battery_information: batteryInformation[binf],
-        battery_notes: batteryNnotes[bn],
+        battery_notes: batteryNotes[bn],
         # created_at:
         # updated_at:
         building_id: build.delete(build.sample),
@@ -264,16 +264,15 @@ employee = Employee.take(20)
 
             #seeding the elevators table
             if columns.persisted?
-                puts "*************************ELEVATORS***********************"
                 elevatorModel =["Standard", "Premium", "Excelium"]
                 buildingType = ["Residential", "Commercial", "Corporate"]
-                elevatorStatus = ["Idle", "Moving"]
-                elevatorInformation = ["Brand new", "old", "Made in US", "Made in Canada", "in service since 4 years"]
+                elevatorStatus = ["Active", "Inactive", "Intervention"]
+                elevatorInformation = ["Brand new", "Old", "Made in US", "Made in Canada", "in service since 4 years"]
                 elevatorNotes = ["Out of service", "To be checked in a week", "The last inspection was successfull"]
                 rand(1..12).times do
                     elm = rand(0..2)
                     build = rand(0..2)
-                    els = rand(0..1)
+                    els = rand(0..2)
                     elInf = rand(0..4)
                     elN = rand(0..2)
                     Elevator.create(
@@ -290,7 +289,6 @@ employee = Employee.take(20)
                         # updated_at
                         column_id: columns.id
                     )
-                    
                 end
             end
         end       
