@@ -7,7 +7,7 @@ class Elevator < ApplicationRecord
     validates :elevator_status, presence: true
 
     after_save :send_slack_message if :elevator_status_has_changed?
-    after_save :send_notification if :elevator_status_is_intervention?
+    after_save :send_notification if :elevator_status_is_intervention? == true
 
     def elevator_status_is_intervention?
         self.elevator_status == "Intervention"
@@ -18,6 +18,10 @@ class Elevator < ApplicationRecord
     end
 
     def send_notification
+        puts "===================="
+        puts elevator_status_is_intervention?
+        puts self.elevator_status
+        puts "===================="
         account_sid = ENV["TWILIO_ACCOUNT_SID"]
         auth_token = ENV["TWILIO_API_KEY"]
         @client = Twilio::REST::Client.new(account_sid, auth_token)
@@ -27,6 +31,7 @@ class Elevator < ApplicationRecord
         to: '+15819953715',
          body: 'The Rocket Team is on his way to your elevator :)!'
     )
+
     end
 
     def send_slack_message
