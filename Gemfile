@@ -32,6 +32,8 @@ gem 'devise'
 gem 'rails_admin'
 
 gem "figaro"
+gem 'twilio-ruby', '~> 5.32.0'
+gem 'slack-ruby-client'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
