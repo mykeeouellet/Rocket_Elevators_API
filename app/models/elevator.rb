@@ -1,14 +1,20 @@
 class Elevator < ApplicationRecord
     require 'twilio-ruby'
+    require 'slack-ruby-client'
 
     belongs_to :column
 
     validates :elevator_status, presence: true
 
+    after_save :send_slack_message if :elevator_status_has_changed?
     after_save :send_notification if :elevator_status_is_intervention?
 
     def elevator_status_is_intervention?
         self.elevator_status == "Intervention"
+    end
+
+    def elevator_status_has_changed?
+        self.changed? == true
     end
 
     def send_notification
@@ -23,4 +29,18 @@ class Elevator < ApplicationRecord
     )
     end
 
+    def send_slack_message
+        e = Elevator.find(self.id)
+        serialNumber = e.elevator_serial_number
+        old_status = previous_changes[:elevator_status][0]
+        new_status = e.elevator_status
+        text = "Elevator " + (e.id.to_s) + " with serial number " + (serialNumber.to_s) + " changed status from " + (old_status) + " to " + (new_status)
+        Slack.configure do |config|
+            config.token = ENV['SLACK_ACCESS_TOKEN']
+        end
+
+        client = Slack::Web::Client.new
+
+        client.chat_postMessage(channel: '#test', text: text, as_user: true)
+    end
 end
