@@ -30,6 +30,14 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
 
 gem 'rails_admin'
+# Figaro parses a Git-ignored YAML file in your application and loads its values into ENV.
+gem "figaro"
+
+# Ruby gem to quickly get started with the various IBM Watson services.
+gem "ibm_watson"
+
+gem 'twilio-ruby', '~> 5.32.0'
+gem 'slack-ruby-client'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -83,12 +91,3 @@ gem "bootstrap-sass"
 gem "chartkick"
 gem "groupdate"
 gem "jquery-ui-rails"
-
-
-# week 7 gems
-
-# Figaro parses a Git-ignored YAML file in your application and loads its values into ENV.
-gem "figaro"
-
-# Ruby gem to quickly get started with the various IBM Watson services.
-gem "ibm_watson"
