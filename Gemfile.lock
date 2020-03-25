@@ -382,14 +382,11 @@ GEM
       tzinfo (>= 1.0.0)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
-
     underscore-rails (1.8.3)
-
     unf (0.1.4)
       unf_ext
     unf (0.1.4-java)
     unf_ext (0.0.7.6)
-
     warden (1.2.8)
       rack (>= 2.0.6)
     web-console (3.7.0)
