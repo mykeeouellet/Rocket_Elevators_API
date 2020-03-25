@@ -1,5 +1,11 @@
 class Elevator < ApplicationRecord
+<<<<<<< HEAD
     
+=======
+    require 'twilio-ruby'
+    require 'slack-ruby-client'
+
+>>>>>>> master
     belongs_to :column
 
     require 'twilio-ruby'
@@ -7,7 +13,12 @@ class Elevator < ApplicationRecord
     # Twilio
     validates :elevator_status, presence: true
 
-    after_save :send_notification if :elevator_status_is_intervention?
+    after_save :send_notification if :elevator_status_is_intervention? == true
+    after_save :send_slack_message if :elevator_status_has_changed?
+
+    def elevator_status_has_changed?
+        self.changed? == true
+    end
 
     def elevator_status_is_intervention?
         self.elevator_status == "Intervention"
@@ -25,6 +36,18 @@ class Elevator < ApplicationRecord
     )
     end
 
+    def send_slack_message
+        e = Elevator.find(self.id)
+        serialNumber = e.elevator_serial_number
+        old_status = previous_changes[:elevator_status][0]
+        new_status = e.elevator_status
+        text = "Elevator " + (e.id.to_s) + " with serial number " + (serialNumber.to_s) + " changed status from " + (old_status) + " to " + (new_status)
+        Slack.configure do |config|
+            config.token = ENV['SLACK_ACCESS_TOKEN']
+        end
+        client = Slack::Web::Client.new
+        client.chat_postMessage(channel: '#test', text: text, as_user: true)
+    end
     # IBM Watson
     # There are currently XXX elevators deployed in the XXX buildings of your XXX customers
     def watson
