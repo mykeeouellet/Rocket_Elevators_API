@@ -1,5 +1,6 @@
 
 Rails.application.routes.draw do
+  get 'geolocation/index'
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   mount Blazer::Engine, at: 'blazer'
 
@@ -44,4 +45,5 @@ Rails.application.routes.draw do
   get "pages/login"
   post "quotes" => "quotes#create"
   post "leads" => "leads#create"
+  post "geolocation/index"
 end
