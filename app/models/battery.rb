@@ -5,8 +5,10 @@ class Battery < ApplicationRecord
 
     # IBM Watson
     # XXX Batteries are deployed across XXX cities
-    # nb_batteries = self.all
-    # nb_cities = Address.city.all
-    # request.body = JSON.dump({
-    # "text" => "#{nb_batteries} Batteries are deployed across #{nb_cities} cities"})
+    def watson
+        nb_batteries = self.all
+        nb_cities = Address.city.all
+        request.body = JSON.dump({
+        "text" => "#{nb_batteries} Batteries are deployed across #{nb_cities} cities"})
+    end
 end

@@ -3,7 +3,9 @@ class Quote < ApplicationRecord
 
    # IBM Watson
    # You currently have XXX quotes awaiting processing
-   # nb_quotes = self.all
-   # request.body = JSON.dump({
-   # "text" => "You currently have #{nb_quotes} quotes awaiting processing"})
+   def watson
+      nb_quotes = self.all
+      request.body = JSON.dump({
+      "text" => "You currently have #{nb_quotes} quotes awaiting processing"})
+   end
 end
