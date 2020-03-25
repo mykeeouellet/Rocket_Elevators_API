@@ -82,7 +82,7 @@ gem 'rvm1-capistrano3', require: false
 gem 'capistrano3-puma'
 
 gem 'jquery-rails'
-gem 'pg', '~> 0.18.4'
+# gem 'pg', '~> 0.18.4'
 gem "font-awesome-rails", github: "bokmann/font-awesome-rails", branch: "master"
 gem 'blazer'
 gem "json"
