@@ -38,7 +38,7 @@ gem "ibm_watson"
 
 gem 'twilio-ruby', '~> 5.32.0'
 gem 'slack-ruby-client'
-gem "zendesk_api"
+# gem "zendesk_api"
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -83,7 +83,7 @@ gem 'rvm1-capistrano3', require: false
 gem 'capistrano3-puma'
 
 gem 'jquery-rails'
-gem 'pg', '~> 0.18.4'
+# gem 'pg', '~> 0.18.4'
 gem "font-awesome-rails", github: "bokmann/font-awesome-rails", branch: "master"
 gem 'blazer'
 gem "json"
