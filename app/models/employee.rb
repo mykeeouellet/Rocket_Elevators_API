@@ -9,7 +9,7 @@ class Employee < ApplicationRecord
 
   # IBM Watson
   # Greetings to the logged users/employees
-  first_name = Employee.firstname
-  request.body = JSON.dump({
-    "text" => "Hello, #{first_name} Welocme to the Rocket Elevators Admin Dashboard!"})
+  # first_name = Employee.firstname
+  # request.body = JSON.dump({
+    # "text" => "Hello, #{first_name} Welocme to the Rocket Elevators Admin Dashboard!"})
 end
