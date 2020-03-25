@@ -86,3 +86,5 @@ gem "bootstrap-sass"
 gem "chartkick"
 gem "groupdate"
 gem "jquery-ui-rails"
+
+gem 'sendgrid-ruby'
