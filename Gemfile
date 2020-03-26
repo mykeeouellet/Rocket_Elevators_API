@@ -88,3 +88,5 @@ gem "groupdate"
 gem "jquery-ui-rails"
 
 gem 'sendgrid-ruby'
+
+gem 'dropbox_api'
