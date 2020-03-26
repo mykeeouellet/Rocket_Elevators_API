@@ -9,27 +9,30 @@ class Elevator < ApplicationRecord
 
     after_save :send_slack_message if :elevator_status_has_changed?
 
-    after_save :send_notification if :elevator_status_is_intervention? == true
+    after_save :send_notification
+    # if :elevator_status_is_intervention? == true
 
     
     def elevator_status_has_changed?
         self.changed? == true
     end
 
-    def elevator_status_is_intervention?
-        self.elevator_status == "Intervention"
-    end
+    # def elevator_status_is_intervention?
+    #     self.elevator_status == "Intervention"
+    # end
 
     def send_notification
-        account_sid = ENV["TWILIO_ACCOUNT_SID"]
-        auth_token = ENV["TWILIO_API_KEY"]
-        @client = Twilio::REST::Client.new(account_sid, auth_token)
+        if self.elevator_status == "intervention"
+            account_sid = ENV["TWILIO_ACCOUNT_SID"]
+            auth_token = ENV["TWILIO_API_KEY"]
+            @client = Twilio::REST::Client.new(account_sid, auth_token)
 
-        @client.messages.create(
-        from: '+13022869361',
-        to: '+15819953715',
-        body: 'The Rocket Team is on his way to your elevator :)!'
-    )
+            @client.messages.create(
+            from: '+13022869361',
+            to: '+15819953715',
+            body: 'The Rocket Team is on his way to your elevator :)!'
+            )
+        end
     end
 
     def send_slack_message
@@ -42,7 +45,7 @@ class Elevator < ApplicationRecord
             config.token = ENV['SLACK_ACCESS_TOKEN']
         end
         client = Slack::Web::Client.new
-        client.chat_postMessage(channel: '#general', text: text, as_user: true)
+        client.chat_postMessage(channel: '#test', text: text, as_user: true)
     end
     # IBM Watson
     # There are currently XXX elevators deployed in the XXX buildings of your XXX customers
