@@ -7,9 +7,11 @@ class Elevator < ApplicationRecord
     # Twilio
     validates :elevator_status, presence: true
 
-    after_save :send_notification if :elevator_status_is_intervention? == true
     after_save :send_slack_message if :elevator_status_has_changed?
 
+    after_save :send_notification if :elevator_status_is_intervention? == true
+
+    
     def elevator_status_has_changed?
         self.changed? == true
     end
@@ -26,7 +28,7 @@ class Elevator < ApplicationRecord
         @client.messages.create(
         from: '+13022869361',
         to: '+15819953715',
-         body: 'The Rocket Team is on his way to your elevator :)!'
+        body: 'The Rocket Team is on his way to your elevator :)!'
     )
     end
 
@@ -40,7 +42,7 @@ class Elevator < ApplicationRecord
             config.token = ENV['SLACK_ACCESS_TOKEN']
         end
         client = Slack::Web::Client.new
-        client.chat_postMessage(channel: '#test', text: text, as_user: true)
+        client.chat_postMessage(channel: '#general', text: text, as_user: true)
     end
     # IBM Watson
     # There are currently XXX elevators deployed in the XXX buildings of your XXX customers
