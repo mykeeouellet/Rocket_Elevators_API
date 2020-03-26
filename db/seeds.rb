@@ -261,7 +261,9 @@ employee = Employee.take(20)
             )    
             columns.save!
             puts columns.inspect
-
+            puts "============================================="
+            puts "              ALLO               "
+            puts "=============================================="
             #seeding the elevators table
             if columns.persisted?
                 elevatorModel =["Standard", "Premium", "Excelium"]
