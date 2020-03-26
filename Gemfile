@@ -38,8 +38,7 @@ gem "ibm_watson"
 
 gem 'twilio-ruby', '~> 5.32.0'
 gem 'slack-ruby-client'
-# gem "zendesk_api"
-
+gem "zendesk_api", git: 'https://github.com/zendesk/zendesk_api_client_rb'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
