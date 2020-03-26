@@ -10,7 +10,7 @@ class Employee < ApplicationRecord
   # IBM Watson
   # Greetings to the logged users/employees
   def watson
-    first_name = self.firstname
+    first_name = current_employee.firstname
     request.body = JSON.dump({
       "text" => "Hello, #{first_name} Welocme to the Rocket Elevators Admin Dashboard!"})
   end

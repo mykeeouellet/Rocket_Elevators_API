@@ -46,4 +46,7 @@ Rails.application.routes.draw do
   post "quotes" => "quotes#create"
   post "leads" => "leads#create"
   post "geolocation/index"
+
+  get 'watson' => "text_to_speech#watson"
 end
+

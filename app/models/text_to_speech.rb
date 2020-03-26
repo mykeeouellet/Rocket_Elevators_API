@@ -1,0 +1,3 @@
+class TextToSpeech < ApplicationRecord
+    
+end
