@@ -1,7 +1,6 @@
 class Elevator < ApplicationRecord
     belongs_to :column
 
-
     require 'twilio-ruby'
     require 'slack-ruby-client'
 
