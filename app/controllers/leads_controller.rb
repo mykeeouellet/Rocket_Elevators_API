@@ -49,7 +49,7 @@ class LeadsController < ApplicationController
     "
     },  
     :priority => "normal",
-    :request_type => "question",
+    :type => "question",
     requester: {"name": lead.lead_email})
 
   end

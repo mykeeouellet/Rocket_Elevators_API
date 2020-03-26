@@ -92,8 +92,8 @@ class QuotesController < ApplicationController
     Thank you.
     "
     },  
-    :priority => "Urgent",
-    :request_type => "Task",
+    :priority => "urgent",
+    :type => "task",
     requester: {"name": quote.email})
 
   end
