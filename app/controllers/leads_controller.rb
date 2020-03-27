@@ -21,10 +21,8 @@ class LeadsController < ApplicationController
           lead.file_name = params[:attachment].original_filename
           lead.attachment = params[:attachment].read
       lead.save!
-
-      # add_file_to_dropbox()
-
-          # SendGrid 
+  
+      # SENDGRID
           data = {
             personalizations: [
               {

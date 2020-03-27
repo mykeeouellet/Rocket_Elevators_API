@@ -9,6 +9,4 @@ class PagesController < ApplicationController
   end
   def login
   end
-  def mySpace
-  end
 end
