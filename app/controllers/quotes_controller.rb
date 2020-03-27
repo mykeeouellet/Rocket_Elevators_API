@@ -92,7 +92,7 @@ class QuotesController < ApplicationController
     Thank you.
     "
     },  
-    :priority => "urgent",
+    :priority => "normal",
     :type => "task",
     requester: {"name": quote.email})
 

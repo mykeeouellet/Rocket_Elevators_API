@@ -47,6 +47,8 @@ ActiveRecord::Schema.define(version: 2020_03_26_155640) do
     t.datetime "updated_at", null: false
     t.string "entity_type"
     t.bigint "entity_id"
+    t.string "latitude"
+    t.string "longitude"
     t.index ["entity_type", "entity_id"], name: "index_addresses_on_entity_type_and_entity_id"
   end
 
@@ -257,7 +259,8 @@ ActiveRecord::Schema.define(version: 2020_03_26_155640) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
+  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"

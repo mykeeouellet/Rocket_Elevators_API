@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.0'
+ruby '2.6.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', "~> 5.2.4", ">= 5.2.4.1"
@@ -88,10 +88,11 @@ gem 'capistrano3-puma'
 gem 'jquery-rails'
 gem 'pg', '~> 0.18.4'
 gem "font-awesome-rails", github: "bokmann/font-awesome-rails", branch: "master"
+gem 'font-awesome-sass', '~> 5.12.0'
 gem 'blazer'
 gem "json"
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
-gem "bootstrap-sass"
+gem 'bootstrap', '~> 4.4.1'
 gem "jquery-ui-rails"
 
 gem 'sendgrid-ruby'
