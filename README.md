@@ -16,7 +16,8 @@ This App implements 7 APIs to a Ruby on Rails app.
     the website http://rocketelevators.ca/admin. Now go to 'Navigation' on the
     left side panel and navigate to the 'Elevators' section. One in the elevators, select
     The elevator that you want to edit its status and click on it. Now you need to 
-    go to 'Elevator Status' and change the status for 'Intervention'. Now click 'Save' at the bottom of the form and it'll send you a notification on your phone.
+    go to 'Elevator Status' and change the status for 'Intervention'. Now click 'Save' at
+    the bottom of the form and it'll send you a notification on your phone.
 
 
 2.Slack API // Usage
@@ -25,7 +26,8 @@ This App implements 7 APIs to a Ruby on Rails app.
     what status it changes to, you will get a message on Slack with all the 
     information about the change that has been made.
 
-    To use this one first you need to go to the Admin section of the website http://rocketelevators.ca/admin. Now go to 'Navigation' on the left side panel and navigate
+    To use this one first you need to go to the Admin section of the website
+    http://rocketelevators.ca/admin. Now go to 'Navigation' on the left side panel and navigate
     to the 'Elevators' section. One in the elevators, select the elevator that you want
     to edit its status and click on it. Now you need to go to 'Elevator Status' and change
     the status for any status you want. Now click 'Save' at the bottom of the form and it'll
@@ -52,16 +54,47 @@ This App implements 7 APIs to a Ruby on Rails app.
 
 4.Sendgrid API // Usage
 
+    This Api will be triggered if a contact completes the "Contact Us" form on the
+    website http://rocketelevators.ca/. A transactional thank-you email will be sent
+    to the email adress putted in the form.
 
+    To use this one first you need to go to the website http://rocketelevators.ca/ 
+    Now go to 'Contact Us' section on bottom of the page, or click on "Contact" in the
+    nav-bar. Now just fill out the form using your email address.
+    Now click 'Valider' at the bottom of the form and it'll send you a email. 
 
 
 5.Dropbox API // Usage
 
+    This Api will be triggered if a contact completes the "Contact Us" form with uploading 
+    file on the website http://rocketelevators.ca/. An archiving procedure will be triggered.
 
+    To use this one first you need to go to the website http://rocketelevators.ca/ 
+    Now go to 'Contact Us' section on bottom of the page, or click on "Contact" in the nav-bar. 
+    Now just fill out the form using your client name "Business Name" . 
+    And upload a file using the upload button. Now click 'Valider' at the bottom of the
+    form and it'll send you a email.Connect to the Rocket Elevators DropBox account with:
+
+        E-mail: maamarmarouene@gmail.com
+        Password: CodeBoxx2020
+
+    On Dropbox left panel click on "Fichiers" to see all Customer Folders who uploaded files. 
+    A new directory in DropBox on behalf of the client if the client does not already exist.
+    You will find the uploaded file on the client DropBox directory.
 
 
 6.IBM Watson API // Usage
 
+    With IBM Watson Text to speech API you are able to listen a written summary 
+    about the current state of the company.If the database is changing the summary
+    is updating right away so you always get the right picture about your empire.
+ 
+    To listen the summary, please sign in to the admin panel http://rocketelevators.ca/watson
+    Click on the audio button and listen the file.
+ 
+    To listen the summary, please sign in to the admin panel http://rocketelevators.ca/admin
+    Then navigate to the Watson tab in the middle of the main page. Click the button 
+    to refresh the file and then play with the audio button.
 
 
 
