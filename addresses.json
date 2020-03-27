@@ -185,6 +185,16 @@
             "longitude": "-71.363468"
         },
         {
+            "street_number":"3600",
+            "street_name":"S Las Vegas Blvd",
+            "suite_or_apartment":"",
+            "city":"Las Vegas",
+            "postal_code": " 89109",
+            "country": "USA",
+            "latitude": "36.1616288",
+            "longitude": "-115.1455763"
+        },
+        {
             "street_number":"55 ",
             "street_name":"Brooksby Village Way",
             "suite_or_apartment":"",
