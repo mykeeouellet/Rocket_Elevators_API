@@ -1,10 +1,10 @@
 class Elevator < ApplicationRecord
+    belongs_to :column
+
     require 'twilio-ruby'
     require 'slack-ruby-client'
 
-    belongs_to :column
-
-    # Twilio
+    # TWILIO
     validates :elevator_status, presence: true
 
     after_save :send_slack_message if :elevator_status_has_changed?
@@ -34,7 +34,7 @@ class Elevator < ApplicationRecord
             )
         end
     end
-
+    # SLACK
     def send_slack_message
         # e = Elevator.find(self.id)
         # serialNumber = e.elevator_serial_number
@@ -47,6 +47,9 @@ class Elevator < ApplicationRecord
         # client = Slack::Web::Client.new
         # client.chat_postMessage(channel: '#test', text: text, as_user: true)
     end
+
+end
+
 
     # IBM Watson
     # There are currently XXX elevators deployed in the XXX buildings of your XXX customers
@@ -62,3 +65,4 @@ class Elevator < ApplicationRecord
     # request.body = JSON.dump({
     #     "text" => "Currently, #{nb_not_active_elevators} elevators are not in Running Status and are being serviced."})
 end
+
