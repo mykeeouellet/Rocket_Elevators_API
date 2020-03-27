@@ -44,23 +44,5 @@ class Elevator < ApplicationRecord
         client = Slack::Web::Client.new
         client.chat_postMessage(channel: '#test', text: text, as_user: true)
     end
-
 end
-
-
-
-    # IBM Watson
-    # There are currently XXX elevators deployed in the XXX buildings of your XXX customers
-    
-    # nb_elevators = Elevator.all
-    # nb_buildings = Building.all 
-    # nb_customers = Customer.all 
-    # request.body = JSON.dump({
-    #     "text" => "There are currently #{nb_elevators} elevators deployed in the #{nb_buildings} buildings of your #{nb_customers} customers."})
-
-    # # Currently, XXX elevators are not in Running Status and are being serviced
-    # nb_not_active_elevators = Elevator.where(e => e.status != 'Active')
-    # request.body = JSON.dump({
-    #     "text" => "Currently, #{nb_not_active_elevators} elevators are not in Running Status and are being serviced."})
-# end
 
