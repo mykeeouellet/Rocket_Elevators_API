@@ -47,6 +47,7 @@ class Elevator < ApplicationRecord
         client = Slack::Web::Client.new
         client.chat_postMessage(channel: '#test', text: text, as_user: true)
     end
+
     # IBM Watson
     # There are currently XXX elevators deployed in the XXX buildings of your XXX customers
     
