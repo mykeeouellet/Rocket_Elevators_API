@@ -29,12 +29,14 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'devise'
 
-gem 'rails_admin'
+# Rails engine that provides an easy-to-use interface for managing your data 
+gem 'rails_admin', '~> 2.0'
+
 # Figaro parses a Git-ignored YAML file in your application and loads its values into ENV.
 gem "figaro"
 
 # Ruby gem to quickly get started with the various IBM Watson services.
-gem "ibm_watson"
+gem "ibm_watson", git: 'https://github.com/watson-developer-cloud/ruby-sdk', branch: 'master'
 
 gem 'twilio-ruby', '~> 5.32.0'
 gem 'slack-ruby-client'
@@ -90,8 +92,6 @@ gem 'blazer'
 gem "json"
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 gem "bootstrap-sass"
-gem "chartkick"
-gem "groupdate"
 gem "jquery-ui-rails"
 gem 'gmaps4rails'
 gem 'underscore-rails', '~> 1.8', '>= 1.8.3'

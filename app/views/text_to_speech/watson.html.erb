@@ -1,6 +1,19 @@
 <% if current_employee %>
-<p> Wonderful day</p>
-<audio controls>
-    <source src='app/assets/audios/summary.wav' type="audio/wav">    
-</audio>
+
+<body style="text-align: center"> 
+  
+    <h1 style="font-family: Roboto">  
+        Curious about our results?
+    </h1> 
+      
+    <h2 style="font-family: Roboto">  
+    Click on the button
+    </h2> 
+    <br> 
+  
+    <audio id="Watson_audio" controls> 
+  
+        <source src= "/app/assets/audios/summary.wav"
+                type="audio/wav"> 
+    </audio> 
 <%end%>
