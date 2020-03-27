@@ -35,6 +35,8 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
     <%= javascript_include_tag "https://www.gstatic.com/charts/loader.js" %>
+
+    <%= javascript_include_tag "//maps.google.com/maps/api/js?key=#{ENV['GOOGLE_API_KEY']}" %>
     
   </body>
 </html>
