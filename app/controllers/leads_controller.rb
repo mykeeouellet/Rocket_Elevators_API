@@ -5,7 +5,7 @@ class LeadsController < ApplicationController
     
     def create
     lead = Lead.new
-    puts "****************************************"
+    puts "*************** ATTACHMENT NAME*************************"
     puts params[:Attachment]
     puts "****************************************"
     
@@ -18,7 +18,8 @@ class LeadsController < ApplicationController
           lead.department_of_service = params[:Department]
           lead.lead_message = params[:Message]
           lead.created_at = Time.now
-          lead.attachment = params[:Attachment]
+          lead.file_name = params[:attachment].original_filename
+          lead.attachment = params[:attachment].read
       lead.save!
   
       # SENDGRID
@@ -49,14 +50,9 @@ class LeadsController < ApplicationController
           response = sg.client.mail._("send").post(request_body: data)
           puts response.as_json
           puts "********************************************"
-
           create_lead_ticket(lead)
           redirect_to "/pages/index_one_page_elevator"
-         
     end
-  
-  # redirect_to "/pages/index_one_page_elevator"
-     
 
 
     def create_lead_ticket(lead)
