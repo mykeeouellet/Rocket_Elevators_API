@@ -10,16 +10,10 @@ class Elevator < ApplicationRecord
     after_save :send_slack_message if :elevator_status_has_changed?
 
     after_save :send_notification
-    # if :elevator_status_is_intervention? == true
 
-    
     def elevator_status_has_changed?
         self.changed? == true
     end
-
-    # def elevator_status_is_intervention?
-    #     self.elevator_status == "Intervention"
-    # end
 
     def send_notification
         if self.elevator_status == "intervention"
@@ -34,18 +28,19 @@ class Elevator < ApplicationRecord
             )
         end
     end
+
     # SLACK
     def send_slack_message
-        # e = Elevator.find(self.id)
-        # serialNumber = e.elevator_serial_number
-        # old_status = previous_changes[:elevator_status][0]
-        # new_status = e.elevator_status
-        # text = "Elevator " + (e.id.to_s) + " with serial number " + (serialNumber.to_s) + " changed status from " + (old_status) + " to " + (new_status)
-        # Slack.configure do |config|
-        #     config.token = ENV['SLACK_ACCESS_TOKEN']
-        # end
-        # client = Slack::Web::Client.new
-        # client.chat_postMessage(channel: '#test', text: text, as_user: true)
+        e = Elevator.find(self.id)
+        serialNumber = e.elevator_serial_number
+        old_status = previous_changes[:elevator_status][0]
+        new_status = e.elevator_status
+        text = "Elevator " + (e.id.to_s) + " with serial number " + (serialNumber.to_s) + " changed status from " + (old_status) + " to " + (new_status)
+        Slack.configure do |config|
+            config.token = ENV['SLACK_ACCESS_TOKEN']
+        end
+        client = Slack::Web::Client.new
+        client.chat_postMessage(channel: '#test', text: text, as_user: true)
     end
 
 end
@@ -65,5 +60,5 @@ end
     # nb_not_active_elevators = Elevator.where(e => e.status != 'Active')
     # request.body = JSON.dump({
     #     "text" => "Currently, #{nb_not_active_elevators} elevators are not in Running Status and are being serviced."})
-end
+# end
 

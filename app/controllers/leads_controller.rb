@@ -50,16 +50,13 @@ class LeadsController < ApplicationController
           puts response.as_json
           puts "********************************************"
 
-
+          create_lead_ticket(lead)
           redirect_to "/pages/index_one_page_elevator"
          
     end
-
-
-end
-      create_lead_ticket(lead)
-      redirect_to "/pages/index_one_page_elevator"
-    end
+  
+  # redirect_to "/pages/index_one_page_elevator"
+     
 
 
   def create_lead_ticket(lead)
