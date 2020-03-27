@@ -6,7 +6,11 @@
             "suite_or_apartment":"104",
             "city":"Quebec",
             "postal_code": "G1N 3Y6",
-            "country": "Canada"
+            "country": "Canada",
+            "latitude": "46.806151",
+            "longitude": "-71.277486"
+
+
         },
         {
             "street_number":"1305",
@@ -14,7 +18,9 @@
             "suite_or_apartment":"102",
             "city":"Quebec",
             "postal_code": "G2K 0A1",
-            "country": "Canada"
+            "country": "Canada",
+            "latitude": "46.83398",
+            "longitude": "-71.29415"
         },
 
         {
@@ -23,7 +29,9 @@
             "suite_or_apartment":"RC1",
             "city":"Quebec",
             "postal_code": "G1K 3G6",
-            "country": "Canada"
+            "country": "Canada",
+            "latitude": "47.591794",
+            "longitude": "-69.734718"
         } ,       
 
         {
@@ -32,7 +40,9 @@
             "suite_or_apartment":"20",
             "city":"Quebec",
             "postal_code": "G1H 6Z5",
-            "country": "Canada"
+            "country": "Canada",
+            "latitude": "46.763497",
+            "longitude": "-71.292632"
         },       
 
         {
@@ -41,7 +51,9 @@
             "suite_or_apartment":"201",
             "city":"Quebec",
             "postal_code": "G2C 1X1",
-            "country": "Canada"
+            "country": "Canada",
+            "latitude": "46.82331",
+            "longitude": "-71.308547"
         },
 
         {
@@ -50,7 +62,10 @@
             "suite_or_apartment":"295",
             "city":"Quebec",
             "postal_code": "G2J 1B8",
-            "country": "Canada"
+            "country": "Canada",
+            "latitude": "46.833422",
+            "longitude": "-71.276104"
+
         },       
 
         {
@@ -58,8 +73,10 @@
             "street_name":"Avenue Lavigerie",
             "suite_or_apartment":" 060",
             "city":"Quebec",
-            "postal_code": " G1V 4N3g",
-            "country": "Canada"
+            "postal_code": " G1V 4N3",
+            "country": "Canada",
+            "latitude": "46.763497",
+            "longitude": "-71.292632"
         },       
 
         {
@@ -68,7 +85,9 @@
             "suite_or_apartment":"112",
             "city":"Quebec",
             "postal_code": "G2E 5E8",
-            "country": "Canada"
+            "country": "Canada",
+            "latitude": "",
+            "longitude": ""
         },       
 
         {
@@ -77,7 +96,9 @@
             "suite_or_apartment":"110",
             "city":"Quebec",
             "postal_code": "G1N 3N8",
-            "country": "Canada"
+            "country": "Canada",
+            "latitude": "46.805264",
+            "longitude": "-71.308547"
         },   
 
         {
@@ -86,7 +107,9 @@
             "suite_or_apartment":" 200",
             "city":"Montreal",
             "postal_code": "H3C 1K1",
-            "country": "Canada"
+            "country": "Canada",
+            "latitude": "45.495951",
+            "longitude": "-73.56202"
         },   
 
         {
@@ -95,7 +118,9 @@
             "suite_or_apartment":"700",
             "city":"Montreal",
             "postal_code": "H3A 1E4",
-            "country": "Canada"
+            "country": "Canada",
+            "latitude": "45.505247",
+            "longitude": "-73.572851"
         },   
 
         {
@@ -104,7 +129,9 @@
             "suite_or_apartment":"104",
             "city":"Montreal",
             "postal_code": "H2G 1Y9",
-            "country": "Canada"
+            "country": "Canada",
+            "latitude": "45.540294",
+            "longitude": "-73.584475"
         },   
 
         {
@@ -113,7 +140,9 @@
             "suite_or_apartment":"",
             "city":"Abington",
             "postal_code": "2351",
-            "country": "USA"
+            "country": "USA",
+            "latitude": "42.0961776",
+            "longitude": "-70.9685309"
         },
         {
             "street_number":"30 ",
@@ -121,7 +150,9 @@
             "suite_or_apartment":"",
             "city":"Avon",
             "postal_code": "2322",
-            "country": "USA"
+            "country": "USA",
+            "latitude": "42.1213016",
+            "longitude": "-71.0301639"
         },
         {
             "street_number":"250 ",
@@ -129,7 +160,9 @@
             "suite_or_apartment":"",
             "city":"",
             "postal_code": "2019",
-            "country": "USA"
+            "country": "USA",
+            "latitude": "45.402409",
+            "longitude": "-96.673042"
         },
         {
             "street_number":"700 ",
@@ -137,7 +170,9 @@
             "suite_or_apartment":"",
             "city":"Brockton",
             "postal_code": "2301",
-            "country": "USA"
+            "country": "USA",
+            "latitude": "",
+            "longitude": ""
         },
         {
             "street_number":"4",
@@ -145,7 +180,9 @@
             "suite_or_apartment":"66",
             "city":"Chelmsford",
             "postal_code": "1824",
-            "country": "USA"
+            "country": "USA",
+            "latitude": "42.616252",
+            "longitude": "-71.363468"
         },
         {
             "street_number":"55 ",
@@ -153,7 +190,9 @@
             "suite_or_apartment":"",
             "city":"Danvers",
             "postal_code": "1923",
-            "country": "USA"
+            "country": "USA",
+            "latitude": "42.5543223",
+            "longitude": "-70.9682506"
         },
         {
             "street_number":"591",
@@ -161,7 +200,9 @@
             "suite_or_apartment":"",
             "city":"Chicopee",
             "postal_code": "1020",
-            "country": "USA"
+            "country": "USA",
+            "latitude": "42.1723059",
+            "longitude": "-72.5737841"
         },
         {
             "street_number":"137 ",
@@ -169,7 +210,9 @@
             "suite_or_apartment":"",
             "city":"East Falmouth",
             "postal_code": "2536",
-            "country": "USA"
+            "country": "USA",
+            "latitude": "41.5618962",
+            "longitude": "-70.5960838"
         },
         {
             "street_number":"42 ",
@@ -177,7 +220,9 @@
             "suite_or_apartment":"",
             "city":"Fairhaven",
             "postal_code": "2719",
-            "country": "USA"
+            "country": "USA",
+            "latitude": "41.644992",
+            "longitude": "-70.887956"
         },
         {
             "street_number":"374",
@@ -185,7 +230,9 @@
             "suite_or_apartment":"",
             "city":"Fall River",
             "postal_code": "2721",
-            "country": "USA"
+            "country": "USA",
+            "latitude": "41.671712",
+            "longitude": "-71.158659"
         },
         {
             "street_number":"121 ",
@@ -193,7 +240,9 @@
             "suite_or_apartment":"",
             "city":"Framingham",
             "postal_code": "1701",
-            "country": "USA"
+            "country": "USA",
+            "latitude": "42.300838",
+            "longitude": "-71.399694"
         },
         {
             "street_number":"677 ",
@@ -201,7 +250,9 @@
             "suite_or_apartment":"",
             "city":"Gardner",
             "postal_code": "1440",
-            "country": "USA"
+            "country": "USA",
+            "latitude": "42.5513515",
+            "longitude": "-71.994842"
         },
         {
             "street_number":"337 ",
@@ -209,7 +260,9 @@
             "suite_or_apartment":"",
             "city":"Hadley",
             "postal_code": "1035",
-            "country": "USA"
+            "country": "USA",
+            "latitude": "42.354133",
+            "longitude": "-72.554175"
         },
         {
             "street_number":"295 ",
@@ -217,7 +270,9 @@
             "suite_or_apartment":"",
             "city":"Halifax",
             "postal_code": "2338",
-            "country": "USA"
+            "country": "USA",
+            "latitude": "41.997397",
+            "longitude": "-70.84637"
         },
         {
             "street_number":"1775",
@@ -225,7 +280,9 @@
             "suite_or_apartment":"",
             "city":"Hanover",
             "postal_code": "2339",
-            "country": "USA"
+            "country": "USA",
+            "latitude": "42.122497",
+            "longitude": "-70831614"
         },
         {
             "street_number":"280",
@@ -233,7 +290,10 @@
             "suite_or_apartment":"",
             "city":"Hudson",
             "postal_code": "1749",
-            "country": "USA"
+            "country": "USA",
+            "latitude": "42.372902",
+            "longitude": "-71.558857"
+
         },
         {
             "street_number":"20 ",
@@ -241,7 +301,9 @@
             "suite_or_apartment":"",
             "city":"Leicester",
             "postal_code": "1524",
-            "country": "USA"
+            "country": "USA",
+            "latitude": "",
+            "longitude": ""
         },
         {
             "street_number":"11 ",
@@ -249,7 +311,9 @@
             "suite_or_apartment":"",
             "city":"Leominster",
             "postal_code": "1453",
-            "country": "USA"
+            "country": "USA",
+            "latitude": "42.492081",
+            "longitude": "-71.729727"
         },
         {
             "street_number":"301 ",
@@ -257,7 +321,9 @@
             "suite_or_apartment":"",
             "city":"Lunenburg",
             "postal_code": "1462",
-            "country": "USA"
+            "country": "USA",
+            "latitude": "42.594906",
+            "longitude": "-71.759838"
         },
         {
             "street_number":"70 ",
@@ -265,7 +331,9 @@
             "suite_or_apartment":"",
             "city":"Methuen",
             "postal_code": "1844",
-            "country": "USA"
+            "country": "USA",
+            "latitude": "42.742807",
+            "longitude": -71.164916
         },
         {
             "street_number":"830 ",
@@ -273,7 +341,9 @@
             "suite_or_apartment":"",
             "city":"North Adams",
             "postal_code": "1247",
-            "country": "USA"
+            "country": "USA",
+            "latitude": "",
+            "longitude": ""
         },
         {
             "street_number":"1470 ",
@@ -281,7 +351,9 @@
             "suite_or_apartment":"",
             "city":"North Attleboro",
             "postal_code": "2760",
-            "country": "USA"
+            "country": "USA",
+            "latitude": "41.933880",
+            "longitude": "-71.350100"
         },
         {
             "street_number":"506 ",
@@ -289,7 +361,11 @@
             "suite_or_apartment":"",
             "city":"North Dartmouth",
             "postal_code": "2747",
-            "country": "USA"
+            "country": "USA",
+            "latitude": "41.639111",
+            "longitude": "-71.030670"
+
+
         },
         {
             "street_number":"180 ",
@@ -297,7 +373,9 @@
             "suite_or_apartment":"",
             "city":"Northhampton",
             "postal_code": "1060",
-            "country": "USA"
+            "country": "USA",
+            "latitude": "",
+            "longitude": ""
         },
         {
             "street_number":"555",
@@ -305,7 +383,10 @@
             "suite_or_apartment":"12",
             "city":"Pittsfield",
             "postal_code": "1201",
-            "country": "USA"
+            "country": "USA",
+            "latitude": "42.465995",
+            "longitude": "-73.196081"
+
         },
         {
             "street_number":"300 ",
@@ -313,7 +394,9 @@
             "suite_or_apartment":"",
             "city":"Plymouth",
             "postal_code": "2360",
-            "country": "USA"
+            "country": "USA",
+            "latitude": "",
+            "longitude": ""
         },
         {
             "street_number":"301 ",
@@ -321,7 +404,9 @@
             "suite_or_apartment":"",
             "city":"Quincy",
             "postal_code": "2169",
-            "country": "USA"
+            "country": "USA",
+            "latitude": "",
+            "longitude": ""
         },
         {
             "street_number":"1180 ",
@@ -329,60 +414,76 @@
             "suite_or_apartment":"",
             "city":"Seekonk",
             "postal_code": "2771",
-            "country": "USA"
+            "country": "USA",
+            "latitude": "",
+            "longitude": ""
         },
         { "street_number": 1745,
             "street_name": "T Street Southeast",
             "suite_or_apartment": "",
             "city": "Washington",
             "postal_code": 20020,
-            "country":"USA"
+            "country":"USA",
+            "latitude": "",
+            "longitude": ""
         },
         {
-            "strret_number": 6007,
+            "street_number": 6007,
             "street_name": "Applegate Lane",
             "suite_or_apartment": "",
             "city": "Louisville",
             "postal_code": 40219,
-            "country": "US"
+            "country": "US",
+            "latitude": "",
+            "longitude": ""
         },
-        {   "strret_number": 560,
+        {   "street_number": 560,
             "street_name": "Penstock Drive",
             "suite_or_apartment": "",
             "city": "Grass Valley",
             "postal_code": 95945,
-            "country": "US"
+            "country": "US",
+            "latitude": "",
+            "longitude": ""
         },
-        {   "strret_number": 150,
+        {   "street_number": 150,
             "street_name": "Carter Street",
             "suite_or_apartment": "",
             "city": "Manchester",
             "postal_code": 6040,
-            "country": "US"
+            "country": "US",
+            "latitude": "",
+            "longitude": ""
         },
         {
-            "strret_number": 2721,
+            "street_number": 2721,
             "street_name": "Lindsay Avenue",
             "suite_or_apartment": "",
             "city": "Louisville",
             "postal_code": 40206,
-            "country": "US"
+            "country": "US",
+            "latitude": "",
+            "longitude": ""
         },
         {   "street_number": 18,
             "street_name": "Densmore Drive",
             "suite_or_apartment": "",
             "city": "Essex",
             "postal_code": 5452,
-            "country": "US"
+            "country": "US",
+            "latitude": "",
+            "longitude": ""
         },
         
         {
-            "strret_number": 637,
+            "street_number": 637,
             "street_name": "Britannia Drive",
             "suite_or_apartment": "",
             "city": "Vallejo",
             "postal_code": 94591,
-            "country": "US"
+            "country": "US",
+            "latitude": "",
+            "longitude": ""
         },
         {
             "street_number": 5601,
@@ -390,7 +491,9 @@
             "suite_or_apartment": "",
             "city": "Glendale",
             "postal_code": 85306,
-            "country": "US"
+            "country": "US",
+            "latitude": "",
+            "longitude": ""
         },
         {
             "street_number": 5403,
@@ -398,7 +501,9 @@
             "suite_or_apartment": "",
             "city": "Nashville",
             "postal_code": 37209,
-            "country": "US"
+            "country": "US",
+            "latitude": "",
+            "longitude": ""
         },
         {
             "street_number": 8821,
@@ -406,7 +511,9 @@
             "suite_or_apartment": "",
             "city": "Glendale",
             "postal_code": 85305,
-            "country": "US"           
+            "country": "US",
+            "latitude": "",
+            "longitude": ""           
         },
         {
             "street_number": 2203,
@@ -414,7 +521,9 @@
             "suite_or_apartment": "",
             "city": "Louisville",
             "postal_code": 40208,
-            "country": "US"           
+            "country": "US",
+            "latitude": "",
+            "longitude": ""          
         },
         {
             "street_number": 6463,
@@ -422,7 +531,9 @@
             "suite_or_apartment": "",
             "city": "Arvada",
             "postal_code": 80003,
-            "country": "US"        
+            "country": "US",
+            "latitude": "",
+            "longitude": ""        
         },
         {
             "street_number": 87,
@@ -430,7 +541,9 @@
             "suite_or_apartment": "",
             "city": "West Windsor",
             "postal_code": 5037,
-            "country": "US"      
+            "country": "US",
+            "latitude": "",
+            "longitude": ""      
         },
         {
             "street_number": 60,
@@ -438,7 +551,9 @@
             "suite_or_apartment": "",
             "city": "Manchester",
             "postal_code": 6040,
-            "country": "US"   
+            "country": "US",
+            "latitude": "",
+            "longitude": ""   
         },
         {
             "street_number": 4,
@@ -446,7 +561,9 @@
             "suite_or_apartment": "",
             "city": "Yarmouth",
             "apostal_code": 2664,
-            "country": "US"
+            "country": "US",
+            "latitude": "",
+            "longitude": ""
         },
         {
             "street_number": 314,
@@ -454,7 +571,9 @@
             "suite_or_apartment": "",
             "city": "Nashville",
             "postal_code": 37206,
-            "Country": "US" 
+            "Country": "US",
+            "latitude": "",
+            "longitude": "" 
         },
         {
             "street_number": 1649,
@@ -462,7 +581,9 @@
             "suite_or_apartment": "",
             "city": "Fayetteville",
             "postal_code": 72704,
-            "country": "US"
+            "country": "US",
+            "latitude": "",
+            "longitude": ""
         },
         {
             "street_street_number": 5461,
@@ -470,7 +591,9 @@
             "suite_or_apartment": "",
             "city": "Montgomery",
             "postal_code": 36108,
-            "country": "US"  
+            "country": "US",
+            "latitude": "",
+            "longitude": ""  
         },
         {
             "street_number": 629,
@@ -478,7 +601,9 @@
             "suite_or_apartment": "",
             "city": "Nashville",
             "postal_code": 37076,
-            "country": "US"   
+            "country": "US",
+            "latitude": "",
+            "longitude": ""  
         },
         {
             "street_number": 22572,
@@ -486,7 +611,9 @@
             "suite_or_apartment": "",
             "city": "Salinas",
             "postal_code": 93908,
-            "country": "US" 
+            "country": "US",
+            "latitude": "",
+            "longitude": "" 
         },
         {
             "street_number": 3034,
@@ -494,15 +621,19 @@
             "suite_or_apartment": "",
             "city": "Fayetteville",
             "postal_code": 72704,
-            "country": "US"
+            "country": "US",
+            "latitude": "",
+            "longitude": ""
         },
         {
-            "strret_number": 3729,
+            "street_number": 3729,
             "street_name": "East Mission Boulevard",
             "suite_or_apartment": "",
             "city": "Fayetteville",
             "postal_code": 72703,
-            "ountry": "US"
+            "country": "US",
+            "latitude": "",
+            "longitude": ""
         },
         {
             "street_number": 5114,
@@ -510,23 +641,29 @@
             "suite_or_apartment": "",
             "city": "Nashville",
             "postal_code": 37211,
-            "country": "US"
+            "country": "US",
+            "latitude": "",
+            "longitude": ""
         },
         {
-            "strret_number": 3466,
+            "street_number": 3466,
             "street_name": "Southview Avenue",
             "suite_or_apartment": "",
             "city": "Montgomery",
             "postal_code": 36111,
-            "country": "US"   
+            "country": "US",
+            "latitude": "",
+            "longitude": ""   
         },
         {
-            "strret_number": 1513,
+            "street_number": 1513,
             "street_name": "Cathy Street",
             "suite_or_apartment": "",
             "city": "Savannah",
             "postal_code": 31415,
-            "country": "US"
+            "country": "US",
+            "latitude": "",
+            "longitude": ""
         },
         {
             "street_number": 600,
@@ -534,31 +671,39 @@
             "suite_or_apartment": "APT B",
             "city": "Anchorage",
             "postal_code": 99503,
-            "country": "US"
+            "country": "US",
+            "latitude": "",
+            "longitude": ""
         },
         {
-            "strret_number": 1208,
+            "street_number": 1208,
             "street_name": "Elkader Court North",
             "suite_or_apartment": "",
             "city": "Nashville",
             "postal_code": 37013,
-            "country": "US"     
+            "country": "US",
+            "latitude": "",
+            "longitude": ""     
         },
         {
-            "strret_number": 210,
+            "street_number": 210,
             "street_name": "Green Road",
             "suite_or_apartment": "",
             "city": "Manchester",
             "postal_code": 6042,
-            "country": "US"
+            "country": "US",
+            "latitude": "",
+            "longitude": ""
         },
         {
-            "strret_number": 49548,
+            "strstreet_numberret_number": 49548,
             "street_name": "Road 200",
             "suite_or_apartment": "",
             "city": "O'Neals",
             "postal_code": 93645,
-            "country": "US"
+            "country": "US",
+            "latitude": "",
+            "longitude": ""
            
         },
         {
@@ -567,7 +712,9 @@
             "suite_or_apartment": "",
             "city": "Washington",
             "postal_code": 20001,
-            "country": "US"
+            "country": "US",
+            "latitude": "",
+            "longitude": ""
         },
         {
             "street_number": 1267,
@@ -575,7 +722,9 @@
             "suite_or_apartment": "#203",
             "city": "Nashville",
             "postal_code": 37203,
-            "country": "US" 
+            "country": "US",
+            "latitude": "",
+            "longitude": "" 
         }
 
 

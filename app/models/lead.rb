@@ -27,7 +27,4 @@ class Lead < ApplicationRecord
     #     file = @client.upload("/#{file}", file_content)
     
     # end
-
-
-
 end

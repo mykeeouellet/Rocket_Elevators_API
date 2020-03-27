@@ -14,7 +14,10 @@ module RocketElevatorsInformationSystem
     config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
     config.i18n.default_locale = :en
 
-    config.action_view.raise_on_missing_translations = false
+    config.action_view.raise_on_missing_translations = true
+
+    config.assets.precompile << "audios/*"
+    config.assets.paths << Rails.root.join("app", "assets", "audios")
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
