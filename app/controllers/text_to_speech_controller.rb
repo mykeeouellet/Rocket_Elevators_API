@@ -5,7 +5,7 @@ require "ibm_watson/authenticators"
 require "ibm_watson/text_to_speech_v1"
 include IBMWatson
 
-  module IBMWatson
+  # module IBMWatson
       def watson
         # If using IAM
         authenticator = IBMWatson::Authenticators::IamAuthenticator.new(
@@ -33,4 +33,4 @@ include IBMWatson
         end
       end
     end
-  end
+  # end
