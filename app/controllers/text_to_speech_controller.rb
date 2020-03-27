@@ -52,6 +52,7 @@ include IBMWatson
             voice: "en-GB_KateVoice"
           )
           audio_file.write(response.result)
+          redirect_back(fallback_location:"/")
         end
       end
     end

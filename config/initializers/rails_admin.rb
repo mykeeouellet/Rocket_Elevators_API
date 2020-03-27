@@ -26,6 +26,7 @@ RailsAdmin.config do |config|
   # config.show_gravatar = true
 
   require Rails.root.join('lib', 'rails_admin', 'custom_actions.rb')
+  require Rails.root.join('lib', 'rails_admin', 'my_action')
 
     config.actions do
 
@@ -38,8 +39,8 @@ RailsAdmin.config do |config|
       edit
       delete
       show_in_app
+      my_action
       foo
-      # bar
       collection
       root              
       ## With an audit adapter, you can add:
