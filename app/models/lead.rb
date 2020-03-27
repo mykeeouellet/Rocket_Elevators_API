@@ -15,13 +15,13 @@ class Lead < ApplicationRecord
 
 
     # def test
-    #     @client = DropboxApi::Client.new('')  
+    #     @client = DropboxApi::Client.new('VFvZpSOiO-AAAAAAAAAAcnn-zgsEqc9jj71YoQVD2n-aqUoGc2kmTLct-7lYi10X')  
     #     #read from dropbox
     #     result = @client.list_folder "/1st folder"
     # end
 
     # def upload_to_dropbox
-    #     @client = DropboxApi::Client.new('')  
+    #     @client = DropboxApi::Client.new('VFvZpSOiO-AAAAAAAAAAcnn-zgsEqc9jj71YoQVD2n-aqUoGc2kmTLct-7lYi10X')  
     #     file = self.attachment
 
     #     file = @client.upload("/#{file}", file_content)
