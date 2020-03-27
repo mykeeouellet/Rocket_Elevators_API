@@ -45,5 +45,12 @@ Rails.application.routes.draw do
   get "pages/login"
   post "quotes" => "quotes#create"
   post "leads" => "leads#create"
+
+  # Dropbox
+  get 'dropbox/auth' => 'dropbox#auth'
+  get 'dropbox/auth_callback' => 'dropbox#auth_callback'
   post "geolocation/index"
+
+  get 'watson' => "text_to_speech#watson"
 end
+
