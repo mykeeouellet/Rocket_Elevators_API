@@ -9,7 +9,7 @@ include IBMWatson
       def watson
         # If using IAM
         authenticator = IBMWatson::Authenticators::IamAuthenticator.new(
-          apikey: ENV["text_to_speech_api_key"]
+          apikey: ENV["TEXT_TO_SPEECH_API_KEY:"]
         )
 
         # If you have username & password in your credentials use:
