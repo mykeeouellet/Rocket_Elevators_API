@@ -41,8 +41,8 @@ p "users:"
         failed_attempts: Faker::Boolean.boolean        
     )
     
-    #user.skip_confirmation!
-    #user.save!
+    # user.skip_confirmation!
+    user.save!
    
     puts user.inspect
 end
@@ -145,7 +145,12 @@ puts "customer:"
             postal_code:jsonData["addresses"][indexAdress]["postal_code"],
             country:jsonData["addresses"][indexAdress]["country"],
             address_notes: addressNotes[an],
-            entity: customer
+            entity: customer,
+            latitude: jsonData["addresses"][indexAdress]["latitude"],
+            longitude: jsonData["addresses"][indexAdress]["longitude"]
+
+
+
         )
     end 
 end    
@@ -185,7 +190,10 @@ customer = Customer.take(50)
             postal_code:jsonData["addresses"][indexAdress]["postal_code"],
             country:jsonData["addresses"][indexAdress]["country"],
             address_notes: addressNotes[an],
-            entity: building
+            entity: building,
+            latitude: jsonData["addresses"][indexAdress]["latitude"],
+            longitude: jsonData["addresses"][indexAdress]["longitude"]
+            
         )
     end
     

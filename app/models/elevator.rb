@@ -36,16 +36,16 @@ class Elevator < ApplicationRecord
     end
 
     def send_slack_message
-        e = Elevator.find(self.id)
-        serialNumber = e.elevator_serial_number
-        old_status = previous_changes[:elevator_status][0]
-        new_status = e.elevator_status
-        text = "Elevator " + (e.id.to_s) + " with serial number " + (serialNumber.to_s) + " changed status from " + (old_status) + " to " + (new_status)
-        Slack.configure do |config|
-            config.token = ENV['SLACK_ACCESS_TOKEN']
-        end
-        client = Slack::Web::Client.new
-        client.chat_postMessage(channel: '#test', text: text, as_user: true)
+        # e = Elevator.find(self.id)
+        # serialNumber = e.elevator_serial_number
+        # old_status = previous_changes[:elevator_status][0]
+        # new_status = e.elevator_status
+        # text = "Elevator " + (e.id.to_s) + " with serial number " + (serialNumber.to_s) + " changed status from " + (old_status) + " to " + (new_status)
+        # Slack.configure do |config|
+        #     config.token = ENV['SLACK_ACCESS_TOKEN']
+        # end
+        # client = Slack::Web::Client.new
+        # client.chat_postMessage(channel: '#test', text: text, as_user: true)
     end
 
     # IBM Watson
