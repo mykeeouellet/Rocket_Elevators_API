@@ -93,5 +93,9 @@ gem "json"
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 gem "bootstrap-sass"
 gem "jquery-ui-rails"
+
+gem 'sendgrid-ruby'
+
+gem 'dropbox_api'
 gem 'gmaps4rails'
 gem 'underscore-rails', '~> 1.8', '>= 1.8.3'

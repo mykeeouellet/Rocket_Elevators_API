@@ -51,6 +51,7 @@ class Elevator < ApplicationRecord
 end
 
 
+
     # IBM Watson
     # There are currently XXX elevators deployed in the XXX buildings of your XXX customers
     

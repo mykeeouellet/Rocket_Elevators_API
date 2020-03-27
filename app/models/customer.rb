@@ -3,4 +3,12 @@ class Customer < ApplicationRecord
     has_many :addresses , as: :entity
     has_many :building
     has_many :quote
+
+    # client = DropboxApi::Client.new('token')
+
+
+
+
+
+
 end
