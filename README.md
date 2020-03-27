@@ -1,13 +1,13 @@
 Rocket Elevators API project.
-===================================================================================================
+==============================================
 Team Leader : Mykee
 Team Members :Agnes, Marouene, Sebastien
 
 This App implements 7 APIs to a Ruby on Rails app.
 
-===================================================================================================
+
 1.Twilio API // Usage
-===================================================================================================
+
     This Api will be triggered if the Status of an Elevator changes to 'Intervention'. You'll get a text message on your phone.
 
     To use this one, first you need to go the Admin Section of the website http://rocketelevators.ca/admin. Now go to 'Navigation' on the left side panel and navigate to the 'Elevators' section. One in the elevators, select the elevator that you want to edit its status and click on it. Now you need to go to 'Elevator Status' and change the status for 'Intervention'. Now click 'Save' at the bottom of the form and it'll send you a notification on your phone.
