@@ -10,19 +10,13 @@ class Elevator < ApplicationRecord
     after_update :send_slack_message if :elevator_status_has_changed?
 
     after_update :send_notification
-    # if :elevator_status_is_intervention? == true
 
-    
     def elevator_status_has_changed?
         self.changed? == true
     end
 
-    # def elevator_status_is_intervention?
-    #     self.elevator_status == "Intervention"
-    # end
-
     def send_notification
-        if self.elevator_status == "intervention"
+        if self.elevator_status == "Intervention"
             account_sid = ENV["TWILIO_ACCOUNT_SID"]
             auth_token = ENV["TWILIO_API_KEY"]
             @client = Twilio::REST::Client.new(account_sid, auth_token)
@@ -34,6 +28,7 @@ class Elevator < ApplicationRecord
             )
         end
     end
+
     # SLACK
     def send_slack_message
         e = Elevator.find(self.id)
@@ -48,3 +43,4 @@ class Elevator < ApplicationRecord
         client.chat_postMessage(channel: '#test', text: text, as_user: true)
     end
 end
+

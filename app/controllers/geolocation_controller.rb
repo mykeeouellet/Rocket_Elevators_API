@@ -60,27 +60,29 @@ class GeolocationController < ApplicationController
       end
     end
 
-    def index
-      @hashResults = executeQuery()
-      @hashResults.inspect
-      @hash = Gmaps4rails.build_markers(@hashResults) do |res, marker|
-        # 1 b.building_administrator_full_name as nomadmin, 
-        #  2         b.building_technical_contact_full_name as nomtech, 
-        #  3         CONCAT(ad.street_number,' ',ad.street_name ,' ', ad.city ,' ',ad.postal_code,' ', ad.country )  as addresse,
-        #  4         ad.latitude latitude,
-        #   5        ad.longitude longitude,
-        #    6       bitem.nbbat,
-        #     7      bitem.nbcol,
-        #      8     bitem.nbelev
-                info = "Administrator name: "+ res[0]+"</br>"+"Client name: "+res[1]
-                marker.lat res[3]
-                marker.lng res[4]
-                # marker.picture {
-                #     #"url"=>"http://people.mozilla.com/~faaborg/files/shiretoko/firefoxIcon/firefox-32.png",
-                #     "width" 32
-                #     "height" 32
-                #   }
-                # marker.infowindow res.to_s
-                #marker.url "http://people.mozilla.com/~faaborg/files/shiretoko/firefoxIcon/firefox-32.png"
-      end
-    end
+  def index
+    @hashResults = executeQuery()
+    @hashResults.inspect
+    @hash = Gmaps4rails.build_markers(@hashResults) do |res, marker|
+      # 1 b.building_administrator_full_name as nomadmin, 
+      #  2         b.building_technical_contact_full_name as nomtech, 
+      #  3         CONCAT(ad.street_number,' ',ad.street_name ,' ', ad.city ,' ',ad.postal_code,' ', ad.country )  as addresse,
+      #  4         ad.latitude latitude,
+      #   5        ad.longitude longitude,
+      #    6       bitem.nbbat,
+      #     7      bitem.nbcol,
+      #      8     bitem.nbelev
+              info = "Administrator name: "+ res[0]+"</br>"+"Client name: "+res[1]
+              marker.lat res[3]
+              marker.lng res[4]
+              # marker.picture {
+              #     #"url"=>"http://people.mozilla.com/~faaborg/files/shiretoko/firefoxIcon/firefox-32.png",
+              #     "width" 32
+              #     "height" 32
+              #   }
+              # marker.infowindow res.to_s
+              #marker.url "http://people.mozilla.com/~faaborg/files/shiretoko/firefoxIcon/firefox-32.png"
+            end
+
+  end
+end
