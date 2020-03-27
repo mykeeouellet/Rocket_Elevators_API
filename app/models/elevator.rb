@@ -17,14 +17,16 @@ class Elevator < ApplicationRecord
 
     def send_notification
         if self.elevator_status == "Intervention"
+            elevator = Elevator.find(self.id)
+            serialNumber = elevator.elevator_serial_number
             account_sid = ENV["TWILIO_ACCOUNT_SID"]
             auth_token = ENV["TWILIO_API_KEY"]
             @client = Twilio::REST::Client.new(account_sid, auth_token)
 
             @client.messages.create(
             from: '+13022869361',
-            to: '+15819953715',
-            body: 'The Rocket Team is on his way to your elevator :)!'
+            to: '+15819831152',
+            body: 'The Rocket Team is on his way to your building to operate on elevator ' + (elevator.id.to_s) + ' with serial number ' + (serialNumber.to_s) + '.'
             )
         end
     end
