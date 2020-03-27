@@ -20,6 +20,7 @@
  *= require settings
  *= require W3
  *= require font-awesome
+ *= require-awesome-sprockets
  *= require jquery-ui
  *= bootstrap-sprockets
  *= bootstrap
@@ -44,3 +45,5 @@
 //  #clientlist{
 // 	 border-right: 1px solid;
 //  }
+
+// @import "bootstrap";

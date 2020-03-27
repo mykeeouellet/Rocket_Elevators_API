@@ -65,22 +65,11 @@ end
 #       building_entity = Address.where(:entity_type => "Building")
 #       nb_cities = building_entity.select(:city).count
 
-#       request.body = JSON.dump({
-#       "text" => "Hello, #{first_name} Welcome to the Rocket Elevators Admin Dashboard!"
-#                 "Currently, #{nb_not_active_elevators} elevators are not in Running Status and are being serviced."
-#                 "There are currently #{nb_elevators} elevators deployed in the #{nb_buildings} buildings of your #{nb_customers} customers."
-#                 "You currently have #{nb_quotes} quotes awaiting processing"
-#                 "You currently have #{nb_leads} leads in your contact requests"
-#                 "#{nb_batteries} Batteries are deployed across #{nb_cities} cities".          
-#                 })
+#       "text" => "Hello, #{first_name} Welcome to the Rocket Elevators Admin Dashboard!
+                  # Currently, #{nb_not_active_elevators} elevators are not in Running Status and are being serviced.
+                  # There are currently #{nb_elevators} elevators deployed in the #{nb_buildings} buildings of your #{nb_customers} customers.
+                  # You currently have #{nb_quotes} quotes awaiting processing.
+                  # You currently have #{nb_leads} leads in your contact requests.
+                  # #{nb_batteries} Batteries are deployed across #{nb_cities} cities.",
 
-  # b.each do |building|
-  # b = building.entity_id
-  # address = Address.find_by_id(b)
-  # cities = address.city.count
 
-  # c = Column.find(elevators.column_id) 
-  # b = Battery.find(c.battery_id)
-  # b2 = Building.find(b.building_id) 
-  # ad = Address.find_by_entity_id(b2.id) 
-  # puts(ad.city)

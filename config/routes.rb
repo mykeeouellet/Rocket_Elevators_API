@@ -49,8 +49,11 @@ Rails.application.routes.draw do
   # Dropbox
   get 'dropbox/auth' => 'dropbox#auth'
   get 'dropbox/auth_callback' => 'dropbox#auth_callback'
-  post "geolocation/index"
 
+  # Google Maps
+  post "geolocation/index"
+  
+  # IBM Watson
   get 'watson' => "text_to_speech#watson"
 end
 
