@@ -56,7 +56,6 @@ class GeolocationController < ApplicationController
         return results.as_json
         else
           return nil
-        end
       end
     end
 

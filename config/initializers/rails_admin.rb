@@ -41,7 +41,7 @@ RailsAdmin.config do |config|
       foo
       # bar
       collection
-      root
+      root              
       ## With an audit adapter, you can add:
       # history_index
       # history_show
