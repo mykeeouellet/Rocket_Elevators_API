@@ -7,16 +7,16 @@ class Elevator < ApplicationRecord
     # TWILIO
     validates :elevator_status, presence: true
 
-    after_save :send_slack_message if :elevator_status_has_changed?
+    after_update :send_slack_message if :elevator_status_has_changed?
 
-    after_save :send_notification
+    after_update :send_notification
 
     def elevator_status_has_changed?
         self.changed? == true
     end
 
     def send_notification
-        if self.elevator_status == "intervention"
+        if self.elevator_status == "Intervention"
             account_sid = ENV["TWILIO_ACCOUNT_SID"]
             auth_token = ENV["TWILIO_API_KEY"]
             @client = Twilio::REST::Client.new(account_sid, auth_token)

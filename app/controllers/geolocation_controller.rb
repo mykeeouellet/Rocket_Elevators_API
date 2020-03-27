@@ -1,4 +1,3 @@
-=
 class GeolocationController < ApplicationController
 
   def sqlQuery()
@@ -84,5 +83,5 @@ class GeolocationController < ApplicationController
               #marker.url "http://people.mozilla.com/~faaborg/files/shiretoko/firefoxIcon/firefox-32.png"
             end
 
-#   end
-# end
+  end
+end
