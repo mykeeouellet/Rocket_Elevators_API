@@ -1,4 +1,3 @@
-
 class GeolocationController < ApplicationController
 
   def sqlQuery()
