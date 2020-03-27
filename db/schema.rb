@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_25_163930) do
+ActiveRecord::Schema.define(version: 2020_03_26_155640) do
 
   create_table "active_storage_attachments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -47,6 +47,8 @@ ActiveRecord::Schema.define(version: 2020_03_25_163930) do
     t.datetime "updated_at", null: false
     t.string "entity_type"
     t.bigint "entity_id"
+    t.string "latitude"
+    t.string "longitude"
     t.index ["entity_type", "entity_id"], name: "index_addresses_on_entity_type_and_entity_id"
   end
 
@@ -250,6 +252,11 @@ ActiveRecord::Schema.define(version: 2020_03_25_163930) do
     t.datetime "created_at"
     t.index ["lead_id"], name: "index_quotes_on_lead_id"
     t.index ["user_id"], name: "index_quotes_on_user_id"
+  end
+
+  create_table "text_to_speeches", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|

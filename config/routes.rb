@@ -50,4 +50,7 @@ Rails.application.routes.draw do
   get 'dropbox/auth' => 'dropbox#auth'
   get 'dropbox/auth_callback' => 'dropbox#auth_callback'
   post "geolocation/index"
+
+  get 'watson' => "text_to_speech#watson"
 end
+
