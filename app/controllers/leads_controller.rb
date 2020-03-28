@@ -18,8 +18,11 @@ class LeadsController < ApplicationController
           lead.department_of_service = params[:Department]
           lead.lead_message = params[:Message]
           lead.created_at = Time.now
-          lead.file_name = params[:attachment].original_filename
-          lead.attachment = params[:attachment].read
+
+          # if lead.attachment != nil 
+            lead.file_name = params[:attachment].original_filename 
+            lead.attachment = params[:attachment].read
+          # end
       lead.save!
   
       # SENDGRID
