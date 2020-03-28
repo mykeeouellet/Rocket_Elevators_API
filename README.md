@@ -62,6 +62,16 @@ This App implements 7 APIs to a Ruby on Rails app.
 
 6.IBM Watson API // Usage
 
+    With IBM Watson Text to speech API you are able to listen a written summary 
+    about the current state of the company.If the database is changing the summary
+    is updating right away so you always get the right picture about your empire.
+ 
+    To listen the summary, please sign in to the admin panel http://rocketelevators.ca/watson
+    Click on the audio button and listen the file.
+ 
+    To listen the summary, please sign in to the admin panel http://rocketelevators.ca/admin
+    Then navigate to the Watson tab in the middle of the main page. Click the button 
+    to refresh the file and then play with the audio button.
 
 
 
