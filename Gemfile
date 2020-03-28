@@ -100,3 +100,5 @@ gem 'sendgrid-ruby'
 gem 'dropbox_api'
 gem 'gmaps4rails'
 gem 'underscore-rails', '~> 1.8', '>= 1.8.3'
+gem 'excon'
+

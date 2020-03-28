@@ -27,7 +27,7 @@ RailsAdmin.config do |config|
 
   require Rails.root.join('lib', 'rails_admin', 'custom_actions.rb')
   require Rails.root.join('lib', 'rails_admin', 'watson.rb')
-  RailsAdmin::Config::Actions.register(RailsAdmin::Config::Actions::Watson)
+  # RailsAdmin::Config::Actions.register(RailsAdmin::Config::Actions::Watson)
     config.actions do
 
       dashboard                     # mandatory
