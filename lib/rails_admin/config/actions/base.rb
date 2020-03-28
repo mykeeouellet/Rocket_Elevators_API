@@ -153,3 +153,24 @@ module RailsAdmin
     end
   end
 end
+
+<% if current_employee %>
+
+  <body style="text-align: left"> 
+    
+      <h1 style="font-family: Roboto">  
+          Curious about our results?
+      </h1> 
+        
+      <h2 style="font-family: Roboto">  
+          Click on the button
+      </h2> 
+      <br> 
+      
+      <audio controls>
+          <source src="/summary.wav" type="audio/wav">    
+      </audio>
+      <p>
+      <button onClick="history.go(0);">Refresh Page</button>
+      </p>
+  
