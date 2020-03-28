@@ -4,8 +4,6 @@ class Lead < ApplicationRecord
     after_save :add_file_to_dropbox
     
     def add_file_to_dropbox
-    #     puts "************ Debut ****************"
-    #   if self.attachment != nil 
         puts "************ attachemnt != nil ****************"
         list_folders = self.list_of_folders_dropbox
         puts "---------- LISTE DES FOLDERS dans Dropbox ------------------ "
@@ -31,11 +29,8 @@ class Lead < ApplicationRecord
             attachment_name = self.file_name
             current_time = DateTime.now.strftime("%M%S")
             @client.upload("/#{company_name}/#{current_time}_#{attachment_name}", content)
-            # self.attachment = nil
-            # self.update(attachment)
+
             puts "**************** FIN DE L'AJOUT du fichier dans le dosssier dans Dropboxx ******************************"
-            #   rescue DropboxApi::Errors::UploadWriteFailedError => e
-            #     p e.message
         end
         puts "********************* END  ********************"
     #   end

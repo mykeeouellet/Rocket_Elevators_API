@@ -75,6 +75,7 @@ This App implements 7 APIs to a Ruby on Rails app.
     And upload a file using the upload button. Now click 'Valider' at the bottom of the
     form and it'll send you a email.Connect to the Rocket Elevators DropBox account with:
 
+        url: https://www.dropbox.com/
         E-mail: maamarmarouene@gmail.com
         Password: CodeBoxx2020
 
