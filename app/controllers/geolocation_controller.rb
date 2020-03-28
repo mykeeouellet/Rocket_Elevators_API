@@ -36,23 +36,21 @@ class GeolocationController < ApplicationController
 
     def executeQuery()
       
-      results = ActiveRecord::Base.connection.execute(sqlQuery())
-    
-
-    results = ActiveRecord::Base.connection.execute(sqlQuery())
-  
-    if results.present? 
-        rep =[]
-
-      return results.as_json
-    else
-      return nil
-
+        results = ActiveRecord::Base.connection.execute(sqlQuery())
+      
       if results.present? 
           rep =[]
+
         return results.as_json
-        else
-          return nil
+      else
+        return nil
+
+        if results.present? 
+            rep =[]
+          return results.as_json
+          else
+            return nil
+        end
       end
     end
 
@@ -66,8 +64,7 @@ class GeolocationController < ApplicationController
               marker.lng res[4]
               marker.infowindow "<b>Administrator name:</b> "+ res[0]+"</br>"+"<b>Technician name: </b>"+res[1]+"</br>"+"<b>Address: </b>"+res[2]+"</br>"+"<b>Latitude: </b>"+ res[3]+"</br>"+"<b>Longitude: </b>"+ res[4]+"</br>"+"<b>Number of batteries: </b>"+ res[5].to_s+"</br>"+"<b>Number of columns: </b>"+ res[6].to_s+"</br>"+"<b>Number of elevators: </b>"+ res[7].to_s+"</br>"
 
-            end
-
+    end
   end
 end
 

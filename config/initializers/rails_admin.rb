@@ -26,8 +26,8 @@ RailsAdmin.config do |config|
   # config.show_gravatar = true
 
   require Rails.root.join('lib', 'rails_admin', 'custom_actions.rb')
-  require Rails.root.join('lib', 'rails_admin', 'my_action')
-
+  require Rails.root.join('lib', 'rails_admin', 'watson.rb')
+  RailsAdmin::Config::Actions.register(RailsAdmin::Config::Actions::Watson)
     config.actions do
 
       dashboard                     # mandatory
@@ -39,10 +39,10 @@ RailsAdmin.config do |config|
       edit
       delete
       show_in_app
-      my_action
-      foo
-      collection
-      root              
+      foo                           # custom_actions.rb
+      collection                    # custom_actions.rb
+      root                          # custom_actions.rb
+      watson                        # watson.rb
       ## With an audit adapter, you can add:
       # history_index
       # history_show

@@ -1,7 +1,7 @@
 
 Rails.application.routes.draw do
-  get 'geolocation/index'
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+
   mount Blazer::Engine, at: 'blazer'
 
   devise_for :employees
@@ -29,11 +29,6 @@ Rails.application.routes.draw do
     post '/users/confirmation(.:format)' => 'confirmations#create'
   end
 
-  resources :charts do
-    get "new-quotes"
-    get "by-month-quotes"
-  end
-
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   root "pages#index_one_page_elevator"
@@ -51,6 +46,7 @@ Rails.application.routes.draw do
   get 'dropbox/auth_callback' => 'dropbox#auth_callback'
 
   # Google Maps
+  get 'geolocation/index'
   post "geolocation/index"
   
   # IBM Watson

@@ -16,8 +16,8 @@ module RocketElevatorsInformationSystem
 
     config.action_view.raise_on_missing_translations = true
 
-    config.assets.precompile << "audios/*"
-    config.assets.paths << Rails.root.join("app", "assets", "audios")
+    # config.assets.precompile << "audios/*"
+    # config.assets.paths << Rails.root.join("app", "assets", "audios")
 
     # Extra
     config.assets.enabled = true
