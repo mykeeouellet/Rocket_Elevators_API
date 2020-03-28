@@ -128,6 +128,26 @@ namespace :dataTransfer do
             x = x + 1
         end
     end
+
+    task codeboxx_employee: :environment do
+        employee_firstname = ["Nicolas", "Nadya", "Martin","Mathieu", "Remi", "Mathieu", "Serge", "David", "Mathieu", "Thommas"]
+        employee_lastname = ["Genest", "Fortier", "Chantal", "Houde", "Gagnon", "Lefrancois", "Savoie", "Boutin", "Lortie", "Carrier"]
+        employee_function = ["Comm Rep", "Director", "Assistant director", "Captain", "Engineer", "Engineer", "Engineer", "Engineer", "Engineer", "Engineer"]
+        employee_email = ["nicolas.genest@codeboxx.biz", "nadya.fortier@codeboxx.biz", "martin.chantal@codeboxx.biz ", "mathieu.houde@codeboxx.biz", "remi.gagnon@codeboxx.biz", "mathieu.lefrancois@codeboxx.biz", "serge.savoie@codeboxx.biz", "david.boutin@codeboxx.biz", "mathieu.lortie@codeboxx.biz", "thomas.carrier@codeboxx.biz"]
+        i = 0
+        10.times do
+            employee= Employee.create(
+                email: employee_email[i],
+                firstname: employee_firstname[i],
+                function: employee_function[i],
+                lastname: employee_lastname[i]
+            )
+            i = i + 1
+            employee.save!
+        end
+    end
+# Call: rake dataTransfer:codeboxx_employee
+
 # creation des tables en postgresql
 task create_pg_table: :environment do
     conn = PG.connect("host=codeboxx-postgresql.cq6zrczewpu2.us-east-1.rds.amazonaws.com port=5432 dbname=WilliamLanglois user=codeboxx password=Codeboxx1!");
