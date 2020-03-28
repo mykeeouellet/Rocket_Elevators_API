@@ -39,8 +39,8 @@ RailsAdmin.config do |config|
       edit
       delete
       show_in_app
-      foo                           # custom_actions.rb
-      collection                    # custom_actions.rb
+      # foo                           # custom_actions.rb
+      # collection                    # custom_actions.rb
       root                          # custom_actions.rb
       watson                        # watson.rb
       ## With an audit adapter, you can add:
