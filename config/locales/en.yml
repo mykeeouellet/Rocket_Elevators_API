@@ -30,7 +30,12 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
-  # faker:
-  #   address:
-  #     create:
+  admin:
+    actions:
+      root: 
+        menu: 'Watson'
+# en:
+#   admin:
+#     actions:
+#       root:
+#         breadcrumb: 'IBM Watson Text to speech'

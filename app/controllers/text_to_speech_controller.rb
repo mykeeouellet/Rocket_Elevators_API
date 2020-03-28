@@ -39,7 +39,9 @@ include IBMWatson
         building_entity = Address.where(:entity_type => "Building")
         nb_cities = building_entity.select(:city).count
 
-        File.open("app/assets/audios/summary.wav", "wb") do |audio_file|
+        summary_file = "#{Rails.root}/public/summary.wav"
+        File.open(summary_file, "wb") do |audio_file|
+        # File.open("app/assets/audios/summary.wav", "wb") do |audio_file|
           response = text_to_speech.synthesize(
             text: "Hello,  #{first_name}!  Welcome to the Rocket Elevators's Admin Dashboard!
                   Currently, #{nb_not_active_elevators} elevators are not in Running Status and are being serviced.

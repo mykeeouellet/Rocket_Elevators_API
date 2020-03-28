@@ -33,3 +33,6 @@
 # Ignore application configuration
 /config/application.yml
 sendgrid.env
+
+# IBM Watson file
+ibm-credentials.env

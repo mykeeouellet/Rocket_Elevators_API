@@ -1,10 +1,12 @@
-# controller code for new rails admin pages/buttons
+require 'rails_admin/config/actions'
+require 'rails_admin/config/actions/base'
 
 module RailsAdmin
   module Config
     module Actions
-      class Customaction < RailsAdmin::Config::Actions::Base
-        register_instance_option :member do  
+      class Watson < RailsAdmin::Config::Actions::Base
+         RailsAdmin::Config::Actions.register(self)
+         register_instance_option :member do  
           true
         end
         register_instance_option :http_methods do
@@ -36,7 +38,7 @@ module RailsAdmin
             redirect_to back_or_index
           end
         end
-      end
+      end    
       class Collection < RailsAdmin::Config::Actions::Base
         RailsAdmin::Config::Actions.register(self)
         register_instance_option :collection do
