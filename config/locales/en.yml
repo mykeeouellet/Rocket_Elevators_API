@@ -33,9 +33,6 @@ en:
   admin:
     actions:
       root: 
-        menu: 'Watson'
-# en:
-#   admin:
-#     actions:
-#       root:
-#         breadcrumb: 'IBM Watson Text to speech'
+        title: 'IBM Watson'
+        menu: 'IBM Watson'
+        breadcrumb: 'IBM Watson Text to speech'
