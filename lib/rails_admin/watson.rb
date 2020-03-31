@@ -1,54 +1,25 @@
 require 'rails_admin/config/actions'
 require 'rails_admin/config/actions/base'
-
+ 
+module RailsAdminPublish
+end
+ 
 module RailsAdmin
   module Config
     module Actions
-      class Watson < RailsAdmin::Config::Actions::Base
-         RailsAdmin::Config::Actions.register(self)
-         register_instance_option :member do  
+      class NewTab < RailsAdmin::Config::Actions::Base
+        # There are several options that you can set here. 
+        # Check https://github.com/sferik/rails_admin/blob/master/lib/rails_admin/config/actions/base.rb for more info.
+ 
+        register_instance_option :bulkable? do
           true
         end
-        register_instance_option :http_methods do
-          [:get, :post]
-        end
-        register_instance_option :pjax? do
-          false
-        end
-        register_instance_option :visible? do
-          authorized?
-        end
-        register_instance_option :link_icon do
-          'fa fa-paper-plane'
-        end
-      end
-      # class Foo < Customaction
-      #   RailsAdmin::Config::Actions.register(self)
-      #   register_instance_option :only do
-      #   end
-      #   register_instance_option :link_icon do
-      #     'fa fa-paper-plane' 
-      #   end
-      #   register_instance_option :http_methods do
-      #     [:get, :post]
-      #   end
-      #   register_instance_option :controller do
-      #     Proc.new do
-      #       flash[:notice] = "Did custom action on #{@object.name}"
-      #       redirect_to back_or_index
-      #     end
-      #   end
-      # end    
-      # class Collection < RailsAdmin::Config::Actions::Base
-      #   RailsAdmin::Config::Actions.register(self)
-      #   register_instance_option :collection do
-      #     true	
-      #   end
-      # end
-      class Root < RailsAdmin::Config::Actions::Base
-        RailsAdmin::Config::Actions.register(self)
-        register_instance_option :root do
-          true	
+ 
+        register_instance_option :controller do
+          Proc.new do
+            
+            redirect_to back_or_index
+          end
         end
       end
     end

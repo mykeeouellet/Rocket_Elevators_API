@@ -25,8 +25,16 @@ RailsAdmin.config do |config|
   ## To disable Gravatar integration in Navigation Bar set to false
   # config.show_gravatar = true
 
+  # Static link in Rails Admin left navigation bar
+  config.navigation_static_label = "API Links"
+
+  config.navigation_static_links = {
+    'IBM Watson' => '/watson',
+    'Geolocation' => 'geolocation/index'
+  }
+
   require Rails.root.join('lib', 'rails_admin', 'custom_actions.rb')
-  require Rails.root.join('lib', 'rails_admin', 'watson.rb')
+  # require Rails.root.join('lib', 'rails_admin', 'watson.rb')
   # RailsAdmin::Config::Actions.register(RailsAdmin::Config::Actions::Watson)
     config.actions do
 
@@ -41,8 +49,8 @@ RailsAdmin.config do |config|
       show_in_app
       # foo                           # custom_actions.rb
       # collection                    # custom_actions.rb
-      root                          # custom_actions.rb
-      watson                        # watson.rb
+      root                            # custom_actions.rb
+      # watson                        # watson.rb
       ## With an audit adapter, you can add:
       # history_index
       # history_show
