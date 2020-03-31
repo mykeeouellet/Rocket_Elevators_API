@@ -1,5 +1,4 @@
 # controller code for new rails admin pages/buttons
-
 module RailsAdmin
   module Config
     module Actions
@@ -48,6 +47,7 @@ module RailsAdmin
         register_instance_option :root do
           true	
         end
+        include AbstractController::Helpers
       end
     end
   end

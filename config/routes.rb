@@ -1,7 +1,6 @@
 
 Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-
   mount Blazer::Engine, at: 'blazer'
 
   devise_for :employees
@@ -47,9 +46,12 @@ Rails.application.routes.draw do
 
   # Google Maps
   get 'geolocation/index'
-  post "geolocation/index"
   
   # IBM Watson
-  get 'watson' => "text_to_speech#watson"
-end
 
+  # get VERB at /watson end-point will call Controller#Action = text_to_speech#watson index from text_to_speech_controller.rb 
+  # as: articles > as "" is the rails routes.rb prefix_path, (typically specifies page)
+  get 'watson' => "text_to_speech#watson"
+  post 'watson' => "text_to_speech#watson"
+  # get 'admin/root' => "text_to_speech#watson"
+end
