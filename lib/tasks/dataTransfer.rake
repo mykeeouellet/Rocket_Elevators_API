@@ -5,7 +5,7 @@ namespace :dataTransfer do
     # Describe (desc) the next rake task
     desc "data transfer to postgresql"
     task transfer_for_factquotes: :environment do
-        conn = PG.connect("host=localhost port=5432 dbname=postgres user=codeboxx password=Bobek");
+        conn = PG.connect("host=codeboxx-postgresql.cq6zrczewpu2.us-east-1.rds.amazonaws.com port=5432 dbname=mykeeouellet user=codeboxx password=Codeboxx1!");
         conn.exec("TRUNCATE TABLE factquotes RESTART IDENTITY")
         x = 1
         Quote.all.each do |quote|
@@ -33,7 +33,7 @@ namespace :dataTransfer do
 
     # migration des datas vers factcontact
     task transfer_for_factcontact: :environment do
-        conn = PG.connect("host=localhost port=5432 dbname=postgres user=codeboxx password=Bobek");
+        conn = PG.connect("host=codeboxx-postgresql.cq6zrczewpu2.us-east-1.rds.amazonaws.com port=5432 dbname=mykeeouellet user=codeboxx password=Codeboxx1!");
         conn.exec("TRUNCATE TABLE factcontact RESTART IDENTITY")
         x = 1
         Lead.all.each do |leads|
@@ -61,7 +61,7 @@ namespace :dataTransfer do
     end
     # migration des datas vers factelevator
     task transfer_for_factelevator: :environment do
-        conn = PG.connect("host=localhost port=5432 dbname=postgres user=codeboxx password=Bobek");
+        conn = PG.connect("host=codeboxx-postgresql.cq6zrczewpu2.us-east-1.rds.amazonaws.com port=5432 dbname=mykeeouellet user=codeboxx password=Codeboxx1!");
         conn.exec("TRUNCATE TABLE factelevator RESTART IDENTITY")
         x = 1
         Elevator.all.each do |elevators|
@@ -95,7 +95,7 @@ namespace :dataTransfer do
     end
     # migration des datas vers dimcustomers
     task transfer_for_dimcustomers: :environment do
-        conn = PG.connect("host=localhost port=5432 dbname=postgres user=codeboxx password=Bobek");
+        conn = PG.connect("host=codeboxx-postgresql.cq6zrczewpu2.us-east-1.rds.amazonaws.com port=5432 dbname=mykeeouellet user=codeboxx password=Codeboxx1!");
         conn.exec("TRUNCATE TABLE dimcustomers RESTART IDENTITY")
         x = 1
         Customer.all.each do |customers|
@@ -134,7 +134,7 @@ namespace :dataTransfer do
     desc "CSV import to the table"
     task transfer_to_factintervention: :environment do
 
-        conn = PG.connect("host=localhost port=5432 dbname=postgres user=codeboxx password=Bobek");
+        conn = PG.connect("host=codeboxx-postgresql.cq6zrczewpu2.us-east-1.rds.amazonaws.com port=5432 dbname=mykeeouellet user=codeboxx password=Codeboxx1!");
         conn.exec("TRUNCATE TABLE factintervention RESTART IDENTITY")
         filename = File.join Rails.root, "intervention_data.csv"
         CSV.foreach(filename, headers: true) do |row|
@@ -165,7 +165,7 @@ namespace :dataTransfer do
 
 # creation des tables en postgresql
 task create_pg_table: :environment do
-    conn = PG.connect("host=localhost port=5432 dbname=postgres user=codeboxx password=Bobek");
+    conn = PG.connect("host=codeboxx-postgresql.cq6zrczewpu2.us-east-1.rds.amazonaws.com port=5432 dbname=mykeeouellet user=codeboxx password=Codeboxx1!");
     conn.exec("
     CREATE TABLE factquotes(
         quoteid INT PRIMARY KEY,
